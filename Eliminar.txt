@@ -1,4 +1,4 @@
 archivo eliminado
 otra linea
 desde remoto
-desde local
+desde locala
