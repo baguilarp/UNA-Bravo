@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Este texto es el t&iacute;tulo del sitio</title>
+		<meta charset="utf-8"/>
+		<meta name="descripcion" content="Ejemplo HTML5"/>
+		<meta name="keyworks" content="HTML5, CSS3, Javascript"/>
+		<link rel="stylesheet" href="css/style.css"> 
+	</head>
+	<body>
+		<header id="titulo">
+			<h1>Kitten Kare</h1>
+		</header>
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>About</li>
+				<li>Services</li>
+			</ul>
+		</nav>
+		<article>
+			<section>
+				<header>
+						<h1>Welcome!</h1>
+				</header>
+				<figure>
+					<img src="img/gato.jpg" alt="Gato">
+				</figure>
+				<p>
+				En este apartado explicaremos cómo y cuándo utilizar los dos elementos de HTML que no se utilizan 
+				para describir el contenido. Los elementos span y div no confieren en realidad ningún significado 
+				al contenido que rodean; de hecho, son un mecanismo genérico que permite crear una estructura y unas
+				agrupaciones personalizadas de elementos en los lugares en los que no hay ningún otro elemento del 
+				HTML que resulte realmente adecuado, a los que entonces se pueden aplicar estilos con CSS o manipular 
+				con JavaScript. 
+				</br>
+				La mayoría de los elementos de HTML existen para describir el contenido, como por ejemplo las imágenes,
+				las listas o los títulos, o para ayudar a componer el documento, como por ejemplo head, body, link, meta, etc. 
+				</p>
+			</section>
+		</article>
+		<aside>
+			<h1>Cat Body Types</h1>
+			<ul>
+				<li>Oriental </li>
+				<li>Foreing</li>
+				<li>Semi-Foreing</li>
+				<li>Semi</li>
+			<ul>
+		</aside>
+		<footer>
+			<nav>
+				<ul>
+					<li>Home</li>
+					<li>About</li>
+					<li>Services</li>
+				</ul>
+			</nav>
+			&copy; Todos los derechos reservados
+		</footer>
+	</body>
+</html>
