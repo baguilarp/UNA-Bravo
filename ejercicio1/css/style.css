@@ -9,13 +9,23 @@ header{
 font: bold 20px verdana, sans-serif;
 padding:15px;
 }
+
+body header h1{
+font: bold 20px verdana, sans-serif;
+background: #CCCCCC;
+padding: 20px;
+}
+
+body article section h1{
+font: bold 20px verdana, sans-serif;
+background: white;
+padding: 20px;
+}
 h2{
 font: bold 14px verdana, sans-serif;
 }
 body{
 text-align: center;
-}
-div {
 width: 90%; /*comentarios*/
 margin: 15px auto;
 text-align: left;
@@ -37,6 +47,7 @@ float: left;
 padding: 20px;
 list-style: disc;
 }
+<<<<<<< HEAD
 footer {
 clear: both;
 text-align: center;
@@ -45,15 +56,42 @@ border-top: 2px solid #999999;
 }
 time {
 color: #999999;
+=======
+
+body footer {
+	clear: both;
+	text-align: center;
+	padding: 20px;
+	border-top: 2px solid #999999;
+}
+
+body footer nav{
+	background: white;
+	padding: 5px 15px;
+}
+
+body footer nav li {
+	display: inline-block;
+	list-style: none;
+	padding: 5px;
+	font: bold 14px verdana, sans-serif;
+	border-right: 2px solid #999999;
+	color: black;
+>>>>>>> origin/master
 }
 figcaption {
 font: italic 14px verdana, sans-serif;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 body nav{
 background: black;
 padding: 5px 15px;
 }
 body nav li {
+<<<<<<< HEAD
 display: inline-block;
 color: white;
 list-style: none;
@@ -79,6 +117,27 @@ font-size: 14px;
 color: blue;
 }
 }*/
+=======
+	display: inline-block;
+	color: white;
+	list-style: none;
+	padding: 5px;
+	font: bold 14px verdana, sans-serif;
+	border-right: 2px solid #999999;
+}
+/*Impresión*/
+@media print {
+    p {
+        font-family: georgia, serif;
+        font-size: 14px;
+        color: black;
+	
+    }
+	nav {
+    display: none;
+	}
+}
+>>>>>>> origin/master
 @media screen and (max-width: 240px){
 figure img{
 width: 215px;
