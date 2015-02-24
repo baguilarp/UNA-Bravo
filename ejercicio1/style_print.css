@@ -1,0 +1,14 @@
+@media screen {
+    p {
+        font-family: verdana, sans-serif;
+        font-size: 17px;
+    }
+}
+
+@media print {
+    p {
+        font-family: georgia, serif;
+        font-size: 14px;
+        color: blue;
+    }
+}
