@@ -8,7 +8,6 @@
 		<link rel="stylesheet" href="css/style.css"> 
 	</head>
 	<body>
-		<div id="agrupar">
 		<header id="titulo">
 			<h1>Kitten Kare</h1>
 		</header>
