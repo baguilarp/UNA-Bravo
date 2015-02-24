@@ -81,8 +81,3 @@ body nav li {
 	font: bold 14px verdana, sans-serif;
 	border-right: 2px solid #999999;
 }
-
-@media print { 
- /* All your print styles go here */
- #header, #section, #footer, #article, #aside { display: none !important; } 
-}
