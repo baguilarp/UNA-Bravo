@@ -74,7 +74,6 @@ body nav li {
 	font: bold 14px verdana, sans-serif;
 	border-right: 2px solid #999999;
 }
- /*Impresión*/
 
 @media screen {
     p {
@@ -82,7 +81,7 @@ body nav li {
         font-size: 17px;
     }
 }
-
+/*Impresión*/
 @media print {
     p {
         font-family: georgia, serif;
@@ -94,4 +93,21 @@ body nav li {
     visibility: hidden;
 	}
 }
+}
+@media screen and (max-width: 240px){
+	img{
+		width:100%;
+	}
+	body{
+		padding: 0px;
+	}
+}
+
+@media screen and (max-width: 320px){
+	img{
+		width:100%;
+	}
+	body{
+		padding: 0px;
+	}
 }
