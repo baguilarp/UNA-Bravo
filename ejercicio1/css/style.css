@@ -89,4 +89,21 @@ body nav li {
         font-size: 14px;
         color: blue;
     }
-}/*
+}*/
+@media screen and (max-width: 240px){
+	img{
+		width:100%;
+	}
+	body{
+		padding: 0px;
+	}
+}
+
+@media screen and (max-width: 320px){
+	img{
+		width:100%;
+	}
+	body{
+		padding: 0px;
+	}
+}
