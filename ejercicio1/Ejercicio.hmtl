@@ -33,14 +33,10 @@
 				al contenido que rodean; de hecho, son un mecanismo genérico que permite crear una estructura y unas
 				agrupaciones personalizadas de elementos en los lugares en los que no hay ningún otro elemento del 
 				HTML que resulte realmente adecuado, a los que entonces se pueden aplicar estilos con CSS o manipular 
-				con JavaScript. A pesar de que los elementos div no añaden ningún significado semántico, se puede 
-				considerar que éstos representan una división estructural del etiquetado junto con la clase semántica 
-				o el nombre de ID adecuados.
+				con JavaScript. 
 				</br>
 				La mayoría de los elementos de HTML existen para describir el contenido, como por ejemplo las imágenes,
 				las listas o los títulos, o para ayudar a componer el documento, como por ejemplo head, body, link, meta, etc. 
-				Sin embargo, hay dos elementos que no tienen ningún significado asignado: los elementos div y span, 
-				junto con los atributos id y class, ofrecen un mecanismo genérico para añadir estructura a los documentos.
 				</p>
 			</section>
 		</article>
