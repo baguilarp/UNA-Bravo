@@ -74,7 +74,7 @@ body nav li {
 	font: bold 14px verdana, sans-serif;
 	border-right: 2px solid #999999;
 }
- /*Impresión
+ /*Impresión*/
 
 @media screen {
     p {
@@ -87,6 +87,11 @@ body nav li {
     p {
         font-family: georgia, serif;
         font-size: 14px;
-        color: blue;
+        color: black;
+	
     }
-}/*
+	body nav {
+    visibility: hidden;
+	}
+}
+}
