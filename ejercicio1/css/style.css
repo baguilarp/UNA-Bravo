@@ -94,6 +94,7 @@ nav li {
 	padding: 5px;
 	font: bold 14px verdana, sans-serif;
 	border-right: 2px solid #999999;
+}
 /*Impresión*/
 @media print {
     p {
@@ -102,10 +103,9 @@ nav li {
         color: black;
 	
     }
-	body nav {
-    visibility: hidden;
+	nav {
+    display: none;
 	}
-}
 }
 @media screen and (max-width: 240px){
 	img{
