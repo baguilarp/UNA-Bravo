@@ -1,10 +1,9 @@
 * {
-	margin: 0px;
-	padding: 0px;
+margin: 0px;
+padding: 0px;
 }
-
 header, section, footer, aside, nav, article, figure, figcaption, hgroup{
-	display: block;
+display: block;
 }
 header{
 font: bold 20px verdana, sans-serif;
@@ -21,89 +20,107 @@ width: 90%; /*comentarios*/
 margin: 15px auto;
 text-align: left;
 }
-
 article {
-	width: 70%;
-	margin: 20px;
-	float: left;
+width: 70%;
+margin: 20px;
+float: left;
 }
-
 section {
-    border: 1px solid #999999;
-	padding: 20px;
-	margin-bottom: 15px;
-	float: left;
+padding: 20px;
+margin-bottom: 15px;
+float: left;
 }
-
 aside {
-	width: 20%;
-	margin: 20px 0px;
-	float: left;
-	padding: 20px;
-	list-style: disc;
+width: 20%;
+margin: 20px 0px;
+float: left;
+padding: 20px;
+list-style: disc;
 }
-
 footer {
-	clear: both;
-	text-align: center;
-	padding: 20px;
-	border-top: 2px solid #999999;
+clear: both;
+text-align: center;
+padding: 20px;
+border-top: 2px solid #999999;
 }
-
-
 time {
-	color: #999999;
+color: #999999;
 }
-
 figcaption {
-	font: italic 14px verdana, sans-serif;
+font: italic 14px verdana, sans-serif;
 }
-
-
-
 body nav{
-	background: black;
-	padding: 5px 15px;
+background: black;
+padding: 5px 15px;
 }
-
 body nav li {
-	display: inline-block;
-	color: white;
-	list-style: none;
-	padding: 5px;
-	font: bold 14px verdana, sans-serif;
-	border-right: 2px solid #999999;
+display: inline-block;
+color: white;
+list-style: none;
+padding: 5px;
+font: bold 14px verdana, sans-serif;
+border-right: 2px solid #999999;
 }
- /*Impresión
-
+img{
+max-width: 100%;
+max-height: 100%;
+}
+/*Impresión
 @media screen {
-    p {
-        font-family: verdana, sans-serif;
-        font-size: 17px;
-    }
+p {
+font-family: verdana, sans-serif;
+font-size: 17px;
 }
-
+}
 @media print {
-    p {
-        font-family: georgia, serif;
-        font-size: 14px;
-        color: blue;
-    }
+p {
+font-family: georgia, serif;
+font-size: 14px;
+color: blue;
+}
 }*/
 @media screen and (max-width: 240px){
-	img{
-		width:100%;
-	}
-	body{
-		padding: 0px;
-	}
+figure img{
+width: 215px;
+height: 220px;
 }
-
+body{
+padding: 0px;
+}
+section{
+padding: 0px;
+}
+div{
+margin:0px;
+}
+article{
+margin:0px;
+}
+aside{
+display: none;
+}
+}
 @media screen and (max-width: 320px){
-	img{
-		width:100%;
-	}
-	body{
-		padding: 0px;
-	}
+img{
+display:relative;
+*width: 295px;
+*height: 220px;
+width: 100%;
+height: 100%;
+}
+body{
+padding: 0px;
+}
+section{
+padding: 0px;
+}
+div{
+margin:0px;
+}
+article{
+margin:0px;
+}
+aside{
+display: none;
+}
 }
