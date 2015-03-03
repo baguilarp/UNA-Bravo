@@ -1,0 +1,17 @@
+/*
+*
+* Grupo Bravo.
+* Estilo para impresión. 
+*
+*/
+@media print {
+    p {
+        font-family: georgia, serif;
+        font-size: 14px;
+        color: black;
+	
+    }
+	nav {
+    display: none;
+	}
+}
