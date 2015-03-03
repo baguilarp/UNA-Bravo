@@ -1,108 +1,125 @@
-/*Element Selectors*/
-body{
-margin: 15px auto;
-text-align: left;
+body
+{
+	margin: 15px auto;
+	text-align: left;
 }
-h1{
-background: #CCCCCC;
-padding: 20px;
+h1
+{
+	background: #CCCCCC;
+	padding: 20px;
+	margin: 0px;
 }
-nav{
-	width: 100%;
+nav
+{
 	background: black;
-	color:white;
+	color: white;
 	padding: 5px 15px;
-}
-
-nav li {
-display: inline-block;
-color: white;
-list-style: none;
-padding: 5px;
-font: bold 14px verdana, sans-serif;
-border-right: 2px solid #999999;
-}
-article {
-width: 70%;
-margin: 20px;
-float: left;
-}
-section {
-    width: 90%;
-	padding: 20px;
-	margin-bottom: 15px;
-	float: left;
-}
-h2{
-background: white;
-padding: 20px;
-}
-figure img{
-width: 100%;
-height: 100%;
-}
-aside {
-width: 20%;
-margin: 20px 0px;
-float: left;
-padding: 20px;
-list-style: disc;
-}
-footer {
 	width: 100%;
-	clear: both;
-	text-align: center;
-	float: left;
-	padding: 20px;
-	border-top: 2px solid #999999;
 }
- footer nav{
+nav li
+{
+	border-right: 2px solid #999999;
+	color: white;
+	display: inline-block;
+	list-style: none;
+	padding: 5px;
+}
+article
+{
+	float: left;
+	margin: 20px;
+	width: 70%;
+}
+section
+{
+	float: left;
+	margin-bottom: 15px;
+	width: 90%;
+}
+figure img
+{
+	height: 100%;
+	width: 100%;
+}
+aside
+{
+	float: left;
+	list-style: disc;
+	margin: 20px 0px;
+	width: 20%;
+}
+footer
+{
+	border-top: 2px solid #999999;
+	clear: both;
+	float: left;
+	text-align: center;
+	width: 100%;
+}
+footer nav
+{
 	background: white;
 }
- footer nav li {
+footer nav li
+{
 	color: black;
 }
-
-@media only screen and (min-width: 240px) and (max-width:320px ){
-body{
-padding: 0px;
-margin:0px;
-}
-nav{
-width:96%;
-padding:0px;
-margin-left:7px;
-margin-top:7px;
-margin-bottom:7px;
-}
-nav li{
-width: 100%;
-padding:0px;
-border:none;
-}
-article{
-margin:0px;
-width: auto;
-}
-section{
-padding: 0px;
-width:100%;
-}
-figure img{
-width: 100%;
-height: 100%;
-}
-aside{
-display: none;
-}
-footer{
-padding:0px;
-}
-footer nav{
-padding:0px;
-}
-footer nav li{
-border:none;
-padding:0px;
-}
+@media only screen and (min-width: 240px) and (max-width:320px )
+{
+	h1
+	{
+		background: #CCCCCC;
+		margin: 0px;
+	}
+	body
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+	nav
+	{
+		margin-bottom: 7px;
+		margin-left: 7px;
+		margin-top: 7px;
+		padding: 0px;
+		width: 96%;
+	}
+	nav li
+	{
+		border: none;
+		padding: 0px;
+		width: 100%;
+	}
+	article
+	{
+		margin: 0px;
+		width: auto;
+	}
+	section
+	{
+		padding: 0px;
+		width: 100%;
+	}
+	figure img
+	{
+		height: 100%;
+		width: 100%;
+	}
+	aside
+	{
+		display: none;
+	}
+	footer
+	{
+		padding: 0px;
+	}
+	footer nav
+	{
+		padding: 0px;
+	}
+	footer nav li
+	{
+		border: none;
+		padding: 0px;
+	}
 }
