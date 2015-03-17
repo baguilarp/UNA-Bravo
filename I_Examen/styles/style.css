@@ -1,6 +1,7 @@
 body{
 font-family:Arial;
 margin-left:2%;
+margin-right:2%;
 }
 
 h1 {
@@ -53,70 +54,3 @@ img {
 .dfoot {
 	text-align:center;
 }
-
-
-
-/*mobile first*/
-
-
-
-h3 + p {
-	background:#F9CB9C;
-	border-style:solid;
-	padding:0.3%;
-}
-
-.menu1{
-	width:100%;
-}
-
-.menu1 ul{
-	list-style: none;
-	display: block;
-	margin: 0px 0px 0px 2px;
-}
-
- .menu1 ul li{
-	text-align: center;
-	background:#DDDDDD;
-	border:0px;
-	display: block;
-	margin-bottom: 5px;
-	padding: 0.5%;
-}
-
- .menu1 ul li:hover{
-
-	background:gray;
-}
-
-.menu1 li.selected {
- background-color:red;
-}
-
-section {
-	width:100%;
-}
-
-aside {
-	margin:0px, 0px, 0px, 0px;
-	width:100%;
-}
-	
-.nfoot{
-	display:none;
-}
-
-
-a:link, a:visited { 
-	color:#406BA3;
-    text-decoration: underline;
-	font-size:1.2 em;
-	font-weight: bold;
-}
-
-a:hover {
-	color:black;
-    text-decoration: none;
-}
-
