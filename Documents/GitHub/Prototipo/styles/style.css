@@ -1,0 +1,46 @@
+/* Element Selectors */
+h3 
+{
+	color:#2D7BE5;
+}
+h4
+{
+	color:#089E12;
+}
+div p span
+{
+	color:red;
+}
+/* Class, Attribute, and Pseudo Selectors */
+h3 + p
+{
+	background:#F9CB9C;
+	border-style:solid;
+}
+
+.alertmessage
+{
+	color:red;
+}
+
+.successfullmessage
+{
+	color:green;
+}
+
+.highlight
+{
+
+border-color:red !important;
+}
+
+
+
+@media only screen and (min-width: 240px) and (max-width:480px )
+{
+/* Element Selectors */
+	*.nav-footer
+	{
+		display:none;
+	}
+}
