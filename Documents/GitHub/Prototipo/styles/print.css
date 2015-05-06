@@ -1,21 +1,23 @@
 @media print 
 {
 
-body, h1, h2, h3, h4, h5, h6, p{
+	body, h1, h2, h3, h4, h5, h6, p
+	{
     text-align:left;
-}
-/* Element Selectors */
-	nav {
+	}
+	/* Element Selectors */
+	nav 
+	{
 		display: none;
 	}
 
-/* Class, Attribute, and Pseudo Selectors */
+	/* Class, Attribute, and Pseudo Selectors */
 	h3 + p
 	{
 		background:white;
 		border-style:none;
 	}
-	#home
+	#home, #menu
 	{
 		display:none;
 	}
