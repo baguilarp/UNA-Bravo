@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -13,11 +13,11 @@
       <!-- NORMALIZE STYLE CSS -->
       <link href="styles/reset.css" rel="stylesheet" media "all" type="text/css"/>
       <!-- BOOTSTRAP CORE STYLE CSS -->
-      <link href="styles/bootstrap.css" rel="stylesheet" media="screen" type="text/css" />
+      <link href="libs/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css" />
       <!-- FONTAWESOME STYLE CSS -->
-      <link href="styles/font-awesome.min.css" rel="stylesheet" media="screen" type="text/css"/>
+      <link href="libs/bootstrap/css/font-awesome.min.css" rel="stylesheet" media="screen" type="text/css"/>
       <!-- TEMPLATE STYLE CSS -->
-      <link href="styles/template.css" rel="stylesheet" media="all" type="text/css"/>
+      <link href="libs/bootstrap/css/template.css" rel="stylesheet" media="all" type="text/css"/>
       <!-- GOOGLE FONT -->
       <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' media="screen" type='text/css' />
       <!-- CUSTOM STYLE CSS -->
@@ -25,17 +25,17 @@
       <link href="styles/print.css" rel="stylesheet" media="print" type="text/css">
    </head>
    <body >
-      <div class="navbar navbar-inverse navbar-fixed-top" >
+      <div class="navbar navbar-inverse navbar-fixed-top">
          <div class="container">
             <h1><a class="navbar-brand" href="index.html">UNA Web Bryan Aguilar</a></h1>
-            <div class="navbar-header">
+            <div class="navbar-header" id="menu">
                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
                </button>
             </div>
-            <div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse" id="menu">
                <ul class="nav navbar-nav navbar-right">
                   <li><a href="index.html">HOME</a></li>
                   <li><a href="about.html">ABOUT</a></li>
@@ -55,7 +55,7 @@
                <li data-target="#carousel-example" data-slide-to="2"></li>
             </ol>
             <!-- Wrapper for slides -->
-            <div class="carousel-inner">
+            <div class="carousel-inner" role="listbox">
                <div class="item active">
                   <img src="images/1.jpg" alt="Imagen 1" />
                   <div class="carousel-caption" >
@@ -95,7 +95,8 @@
                      <div class="col-md-8 col-sm-8 ">
                         <h2>Main Section</h2>
                         <p>
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in pulvinar metus. Aenean sed ligula blandit, suscipit erat vel, ornare mi. Nullam tincidunt ullamcorper ligula, ac bibendum quam lobortis ut. Sed quis nisl dapibus, consequat elit sit amet, dictum justo. Suspendisse a scelerisque odio, quis semper purus. Maecenas eget sapien erat. In hac habitasse platea dictumst.
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in pulvinar metus. Aenean sed ligula blandit, suscipit erat vel, ornare mi. Nullam tincidunt ullamcorper ligula, ac bibendum quam lobortis ut. Sed quis nisl dapibus, consequat elit sit amet, dictum justo. Suspendisse a scelerisque odio, quis semper purus. Maecenas eget sapien erat. In hac habitasse platea dictumst. <br/><br/>
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in pulvinar metus. Aenean sed ligula blandit, suscipit erat vel, ornare mi. Nullam tincidunt ullamcorper ligula, ac bibendum quam lobortis ut.
                         </p>
                      </div>
                      <div class="col-md-4 col-sm-4 ">
@@ -150,8 +151,8 @@
       <!--/.FOOTER END-->
       <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
       <!-- CORE JQUERY  -->
-      <script src="libs/jquery-1.10.2.js"></script>
+      <script src="js/jquery-1.10.2.js"></script>
       <!-- BOOTSTRAP SCRIPTS  -->
-      <script src="libs/bootstrap.js"></script>
+      <script src="libs/bootstrap/js/bootstrap.js"></script>
    </body>
 </html>
