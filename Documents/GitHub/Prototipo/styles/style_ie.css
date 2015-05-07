@@ -1,11 +1,7 @@
-/* Element Selectors*/
-h5 
-{
-	color:red;
-}
+/* CUSTOM IE STYLE CSS */
+
 /* Pseudo-element Selectors*/
-h5 + p 
+#iered
 {
 	color:red;
-	padding:0.3%;
 }
