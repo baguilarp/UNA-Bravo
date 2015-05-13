@@ -41,6 +41,7 @@ nav li{
 	list-style: none;	
 	padding: 5px;
 }
+nav:last-child li{border-right:none;} 
 nav li a:hover{
 text-decoration:none;
 color:black;
