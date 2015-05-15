@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      <meta name="description" content="Examen Practico UNA" />
+      <meta name="author" content="Bryan Aguilar" />
+      <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <![endif]-->
+      <title>UNA Web Bryan Aguilar</title>
+      <!-- NORMALIZE STYLE CSS -->
+      <link href="styles/reset.css" rel="stylesheet" media="all" type="text/css"/>
+      <!-- BOOTSTRAP CORE STYLE CSS -->
+      <link href="libs/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css" />
+      <!-- FONTAWESOME STYLE CSS -->
+      <link href="libs/bootstrap/css/font-awesome.min.css" rel="stylesheet" media="screen" type="text/css"/>
+      <!-- TEMPLATE STYLE CSS -->
+      <link href="libs/bootstrap/css/template.css" rel="stylesheet" media="screen" type="text/css"/>
+      <!-- GOOGLE FONT -->
+      <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" media="screen" type="text/css"/>
+      <!-- CUSTOM STYLE CSS -->
+      <link href="styles/style.css" rel="stylesheet" media="all" type="text/css"/>
+      <link href="styles/print.css" rel="stylesheet" media="print" type="text/css">
+   </head>
+   <body >
+      <div class="navbar navbar-inverse navbar-fixed-top" id="menu-noprint">
+         <div class="container">
+            <h1><a class="navbar-brand" href="index.html">UNA Web Bryan Aguilar</a></h1>
+            <div class="navbar-header" id="menu">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+            </div>
+            <div class="navbar-collapse collapse">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="courses.html">COURSES</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!--/.NAVBAR END-->
+      <section id="caru-noprint" class="head-main-img">
+         <div class="container">
+            <div class="row text-center pad-row" >
+               <div class="col-md-12">
+                  <h1>  CONTACT US  </h1>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--/.HEADING END-->
+      <section id="contact">
+         <div class="container">
+            <div class="row">
+               <ol class="breadcrumb">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="active">Contact</li>
+               </ol>
+               <div class="col-lg-4">
+                  <ul class="nav nav-pills nav-stacked">
+                     <li class="active"><a href="#">Contact US</a></li>
+                     <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Support<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                           <li><a href="#">Basic</a></li>
+                           <li><a href="#">Advance</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="#">Sales</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-8">
+                  <form name="sentMessage" id="contactForm" novalidate>
+                     <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                           <label for="name">Name</label>
+                           <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                        </div>
+                     </div>
+                     <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                           <label for="email">Email Address</label>
+                           <input type="text" class="form-control" placeholder="Email Address"               id="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                     </div>
+                     <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                           <label for="phone">Phone Number</label>
+                           <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number." data-validation-required-message2 = "Invalid characters!, Please enter your phone only with numbers.">
+                        </div>
+                     </div>
+                     <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                           <label for="detail">Message</label>
+                           <textarea rows="5" class="form-control" placeholder="Message" id="detail" required data-validation-required-message="Please enter a message."></textarea>
+                        </div>
+                     </div>
+                     <br>
+                     <div id="success"></div>
+                     <div class="row">
+                        <div class="form-group col-xs-12">
+                           <button type="submit" id = "send" class="btn btn-success btn-lg" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Send</button>
+                        </div>
+                     </div>
+                  </form>
+                  <noscript>Sorry, your browser does not support JavaScript!</noscript>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="footer-sec" >
+         <div class="container text-center">
+            <hr/>
+            <nav class="nav-footer">
+               <div class="row">
+                  <div class="col-md-3">
+                     <ul class="nav nav-pills nav-stacked">
+                        <li><a href="index.html" title="HOME">HOME</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-3">
+                     <ul class="nav nav-pills nav-stacked">
+                        <li><a href="about.html" title="ABOUT">ABOUT</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-3">
+                     <ul class="nav nav-pills nav-stacked">
+                        <li><a href="courses.html" title="COURSES">COURSES</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-3">
+                     <ul class="nav nav-pills nav-stacked">
+                        <li><a href="contact.html" title="CONTACT">CONTACT</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+            <span>Copyright &copy; 2015. Curso de programación Web</span>
+         </div>
+      </section>
+      <!--/.FOOTER END-->
+      <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+      <!-- CORE JQUERY  -->
+      <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+      <!-- BOOTSTRAP SCRIPTS  -->
+      <script type="text/javascript" src="libs/bootstrap/js/bootstrap.js"></script>
+      <!-- CUSTOM SCRIPTS  -->
+      <script type="text/javascript" src="js/contact.js"></script>
+   </body>
+</html>
