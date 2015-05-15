@@ -1,0 +1,56 @@
+body{
+font-family:Arial;
+margin-left:2%;
+margin-right:2%;
+}
+
+h1 {
+ color:black;
+ margin:0px;
+ border:0;
+ padding: 0.1em;
+ font-size:4em;
+ font-weight: bold;
+}
+
+h2 {
+ color:black;
+ margin:0px;
+ border:0;
+ padding: 0.1em;
+ font-size:3em;
+ font-weight: bold;
+}
+
+h3 {
+margin:0px, 0px, 0px, 0px;
+ color:#2D7BE5;
+ font-size:2.5em;
+ font-weight: bold;
+}
+
+h4 {
+ color:#089E12;
+ font-size:2em;
+ font-weight: bold;
+}
+
+h5 {
+ color:#D2342C;
+ font-size:1.5em;
+ font-weight: bold;
+}
+
+aside p span{
+color:red;
+}
+
+img {
+	width: 100%;
+	min-width: 460px; 
+	height: auto;
+}
+
+.dfoot {
+	text-align:center;
+}
