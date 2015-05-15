@@ -1,0 +1,10 @@
+/* Element Selectors*/
+h5
+{
+	color:red;
+}
+/* Pseudo-element Selectors*/
+h5 + p 
+{
+	color:red;
+}
