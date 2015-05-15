@@ -1,0 +1,36 @@
+@media print 
+{
+/* Element Selectors */
+	header
+	{
+		width:100%;
+	}
+    p
+	{
+        font-family: georgia, serif;
+        font-size: 14px;
+        color: black;
+	
+    }
+	section
+	{
+		width:100%;
+	}
+	aside
+	{
+		width:100%;
+	}
+	nav {
+		display: none;
+	}
+	article
+	{
+		display:none;
+	}
+/* Pseudo-element Selectors*/
+	h3 + p
+	{
+		background:white;
+		border-style:none;
+	}
+}
