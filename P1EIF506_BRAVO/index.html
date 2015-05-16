@@ -9,8 +9,11 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <!--[if lt IE 9]>
+    <!-- Template -->
+    <link href="css/main.css" rel="stylesheet"> 
+       <!-- Bootstrap Form Helpers -->
+    <link href="lib/bootstrapformhelpers/dist/css/bootstrap-formhelpers.min.css" rel="stylesheet" media="screen">
+   <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
@@ -26,6 +29,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="index.html"></a>
                 </div>
@@ -35,6 +39,7 @@
                         <li><a href="#services">Servicios</a></li>
                         <li><a href="#portfolio">Hoteles</a></li>
                         <li><a href="#contact">Contactenos</a></li>
+                        <li><div class="bfh-selectbox bfh-languages" data-language="es_CR" data-available="es_CR" data-flags="true" data-blank="false"></div></li>
                     </ul>
                 </div>
             </div>
@@ -133,12 +138,41 @@
                 <div class="center gap">
                     <h2>Hoteles</h2>
                     <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac<br>turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                    <form class="example form-inline">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p class="lead">Provincia</p>
+                                <select class="form-control bfh-states" data-country="CR" data-blank="false"></select>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="lead">Hotel</p>
+                                <div class="bfh-selectbox" data-name="selectbox1">
+                                    <div data-value="1">Hotel 1</div>
+                                    <div data-value="2">Hotel 2</div>
+                                    <div data-value="1">Hotel 3</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="lead">Llegada</p>
+                                <div class="bfh-datepicker" data-min="today" data-format="d/m/y" data-close="false"></div>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="lead">Salida</p>
+                                <div class="bfh-datepicker" data-min="today" data-format="d/m/y" data-close="false"></div>
+                            </div> 
+                            <div class="col-md-2">
+                                <p class="lead">Reservación</p>
+                                <button type="button" class="btn btn-success btn-lg">Reserve Ahora</button>
+                            </div>
+                        </div>
+                    </form>
                 </div><!--/.center-->
                 <ul class="portfolio-filter">
                     <li><a class="btn btn-primary active" href="#" data-filter="*" data-toggle="tooltip" data-placement="top" title="Todos los Hoteles">Todos</a></li>
                     <li><a class="btn btn-primary" href="#" data-filter=".beach" data-toggle="tooltip" data-placement="top" title="Hoteles de Playa">Playa</a></li>
                     <li><a class="btn btn-primary" href="#" data-filter=".mountain" data-toggle="tooltip" data-placement="top" title="Hoteles de Montaña">Montaña</a></li>
                     <li><a class="btn btn-primary" href="#" data-filter=".city" data-toggle="tooltip" data-placement="top" title="Hoteles de Ciudad">Ciudad</a></li>
+
                 </ul><!--/#portfolio-filter-->
                 <ul class="portfolio-items col-4">
                     <li class="portfolio-item apps">
@@ -239,40 +273,40 @@
             <div class="box last">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1>Contact Form</h1>
+                        <h1>Formulario de Contacto</h1>
                         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
                         <div class="status alert alert-success" style="display: none"></div>
                         <form id="main-contact-form" class="contact-form" name="contact-form" method="post" role="form">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" required="required" placeholder="Name">
+                                        <input type="text" class="form-control" required="required" placeholder="Nombre">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" required="required" placeholder="Email address">
+                                        <input type="text" class="form-control" required="required" placeholder="Correo electrónico">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
+                                        <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Mensaje"></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-danger btn-lg" data-toggle="tooltip" data-placement="right" title="Enviar Formulario" >Send Message</button>
+                                        <button type="submit" class="btn btn-success btn-lg" data-toggle="tooltip" data-placement="right" title="Enviar Mensaje" >Enviar</button>
                                     </div>
                                 </div>
                             </div>
                         </form>
                     </div><!--/.col-sm-6-->
                     <div class="col-sm-6">
-                        <h1>Our Address</h1>
+                        <h1>Nuestra dirección</h1>
                         <div class="row">
                             <div class="col-md-6">
                                 <address>
-                                    <strong>Twitter, Inc.</strong><br>
+                                    <strong>Dirección 1</strong><br>
                                     795 Folsom Ave, Suite 600<br>
                                     San Francisco, CA 94107<br>
                                     <abbr title="Phone">P:</abbr> (123) 456-7890
@@ -280,14 +314,14 @@
                             </div>
                             <div class="col-md-6">
                                 <address>
-                                    <strong>Twitter, Inc.</strong><br>
+                                    <strong>Dirección 2</strong><br>
                                     795 Folsom Ave, Suite 600<br>
                                     San Francisco, CA 94107<br>
                                     <abbr title="Phone">P:</abbr> (123) 456-7890
                                 </address>
                             </div>
                         </div>
-                        <h1>Connect with us</h1>
+                        <h1>Únete a nuestra comunidad</h1>
                         <div class="row">
                             <div class="col-md-6">
                                 <ul class="social">
@@ -320,11 +354,17 @@
         </div>
     </footer><!--/#footer-->
 
+    <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
+    <!-- Template -->
     <script src="js/main.js"></script>
-    <script src="js/funciones.js"></script>
+    <!-- Bootstrap Form Helpers -->
+    <script src="lib/bootstrapformhelpers/dist/js/bootstrap-formhelpers.min.js"></script>
+	<!-- Custom -->
+	<script src="js/funciones.js"></script>
 </body>
 </html>
