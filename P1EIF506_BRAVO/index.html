@@ -11,6 +11,7 @@
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <!-- Template -->
     <link href="css/main.css" rel="stylesheet"> 
+    <link href="css/validar.css" rel="stylesheet"> 
        <!-- Bootstrap Form Helpers -->
     <link href="lib/bootstrapformhelpers/dist/css/bootstrap-formhelpers.min.css" rel="stylesheet" media="screen">
    <!--[if lt IE 9]>
@@ -87,7 +88,8 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
                         <div class="center">
-                            <i class="icon-search icon-md icon-color1"></i>
+						<!--<button type="button" class="btn btn-default" > -->
+                            <i class="icon-search icon-md icon-color1"></i> 
                             <h4>Búsquedas</h4>
                             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
                         </div>
@@ -276,26 +278,30 @@
                         <h1>Formulario de Contacto</h1>
                         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
                         <div class="status alert alert-success" style="display: none"></div>
-                        <form id="main-contact-form" class="contact-form" name="contact-form" method="post" role="form">
+                        <form id="main-contact-form" class="contact-form" name="contact-form" method="get" role="form">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" required="required" placeholder="Nombre">
+                                        <input type="text" class="form-control" required placeholder="Nombre">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" required="required" placeholder="Correo electrónico">
+                                        <input id="email" name="email" type="text" class="text required email" required placeholder="Correo electrónico">
+                                        <label for="email" class="error">No es una dirección valida de correo</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Mensaje"></textarea>
+                                        <textarea name="message" id="message" required class="form-control" rows="8" placeholder="Mensaje"></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-success btn-lg" data-toggle="tooltip" data-placement="right" title="Enviar Mensaje" >Enviar</button>
+                                    <fieldset class="submit">
+                                        <button id="submit"  type="submit" class="btn btn-success btn-lg" data-toggle="tooltip" data-placement="right" title="Enviar Mensaje" >Enviar</button>
+                                   </fieldset>
+                                   
                                     </div>
                                 </div>
                             </div>
@@ -354,8 +360,8 @@
         </div>
     </footer><!--/#footer-->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!-- jQuery -->    
+    <script src="lib/jquery-1.11.1.js"></script>   
     <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
@@ -365,6 +371,7 @@
     <!-- Bootstrap Form Helpers -->
     <script src="lib/bootstrapformhelpers/dist/js/bootstrap-formhelpers.min.js"></script>
 	<!-- Custom -->
-	<script src="js/funciones.js"></script>
+	<script src="lib/jquery.validate.js"></script>
+    <script src="js/funciones.js"></script> 
 </body>
 </html>
