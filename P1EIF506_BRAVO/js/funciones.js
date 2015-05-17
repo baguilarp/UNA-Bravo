@@ -92,6 +92,59 @@ $('document').ready(function() {
 		}
 	});
 
+	$(".modal-wide").on("show.bs.modal", function() {
+  var height = $(window).height() - 325;
+  $(this).find(".modal-body").css("max-height", height);
+});
+	      google.maps.event.addDomListener(window, 'load',  function() {
+                 
+        var mapOptions = {
+        	zoom: 12,
+          center: new google.maps.LatLng(9.988137,-84.135764),
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        
+          var map = new google.maps.Map(document.getElementById('map-container'),
+      mapOptions);
+
+
+        var marker = new google.maps.Marker({
+            position: map.getCenter(),
+            map: map, 
+            title:"Infoturistica"});
+            
+  google.maps.event.addListener(map, 'center_changed', function() {
+    // 3 seconds after the center of the map has changed, pan back to the
+    // marker.
+    window.setTimeout(function() {
+      map.panTo(marker.getPosition());
+    }, 3000);
+  });
+
+  google.maps.event.addListener(marker, 'click', function() {
+    map.setZoom(8);
+    map.setCenter(marker.getPosition());
+  });
+
+$("div[id^=myModal]").on("shown.bs.modal", function(e) {
+      google.maps.event.trigger(map, "resize");
+      //return map.setCenter(markerLatLng);
+    });
+
+     });
+
+});
+
+
+$(function () {
+    $('#myModal1').on('shown.bs.modal', function (e) {
+        var src = $('#videowrapper').attr('data-iframe-src');
+        $('#videowrapper').attr('src', src);
+    });
+
+    $('#myModal1').on('hidden.bs.modal', function (e) {
+        $('#videowrapper').attr('src', '');
+    });
 });
 
 
@@ -135,7 +188,5 @@ function rewriteoption(myfilter) {
 	}
 }
 
-$(".modal-wide").on("show.bs.modal", function() {
-  var height = $(window).height() - 325;
-  $(this).find(".modal-body").css("max-height", height);
-});
+
+

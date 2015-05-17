@@ -37,3 +37,8 @@ form label.error	 {
 .modal-wide .modal-body {
   overflow-y: auto;
 }
+
+html { height: 100% }
+body { height: 100%; background-color:#CCC }
+#map-outer {height: 220px; padding: 20px; border: 2px solid #CCC; margin-bottom: 20px; background-color:#FFF }
+#map-container { height: 200px }
