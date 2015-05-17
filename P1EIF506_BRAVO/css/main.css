@@ -257,6 +257,10 @@ a:focus {
 .portfolio-item:hover .overlay {
   opacity: 1;
 }
+.hotel-slider h2, h3{
+	text-align: center;
+	color: #fff;
+}
 /* Start: Recommended Isotope styles */
 /**** Isotope Filtering ****/
 .isotope-item {
