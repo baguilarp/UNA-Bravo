@@ -3,17 +3,8 @@ $('document').ready(function() {
     //inicializa  tooltip
     $('[data-toggle="tooltip"]').tooltip()
 	
-	//valida email
-    var elements = $("input[type!='submit'], textarea, select");
-    elements.focus(function() {
-        $(this).parents('li').addClass('highlight');
-    });
-    elements.blur(function() {
-        $(this).parents('li').removeClass('highlight');
-    });
-
-
-    $("#main-contact-form").validate()
+	//valida email	
+	$("#main-contact-form").validate()   
 	
 	//filtro de provincias
 	$( "#provincia" ).click(function() {
