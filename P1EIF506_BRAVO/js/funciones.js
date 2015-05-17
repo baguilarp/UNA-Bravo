@@ -82,12 +82,12 @@ $('document').ready(function() {
 		}
 		if (val == 'Sj1') {
 			$portfolio.isotope({
-				filter: '.san_jose1'
+				filter: '.sj1'
 			});
 		}
 		if (val == 'Sj2') {
 			$portfolio.isotope({
-				filter: '.san_jose2'
+				filter: '.sj2'
 			});
 		}
 	});
@@ -149,44 +149,41 @@ $(function () {
 
 
 function optionswitch(myfilter) {
-	// Rellenar el optionstore si la primera vez a través de
-	if ($('#optionstore').text() == "") {
-		$('option[class^="sub-"]').each(function() {
-			var optvalue = $(this).val();
-			var optclass = $(this).prop('class');
-			var opttext = $(this).text();
-			optionlist = $('#optionstore').text() + "@%" + optvalue + "@%" + optclass + "@%" + opttext;
-			$('#optionstore').text(optionlist);
-		});
-	}
-	// Eliminar todo
-	$('option[class^="sub-"]').remove();
+    //Populate the optionstore if the first time through
+    if ($('#optionstore').text() == "") {
+        $('option[class^="sub-"]').each(function() {
+            var optvalue = $(this).val();
+            var optclass = $(this).prop('class');
+            var opttext = $(this).text();
+            optionlist = $('#optionstore').text() + "@%" + optvalue + "@%" + optclass + "@%" + opttext;
+            $('#optionstore').text(optionlist);
+        });
+    }
+    // Eliminar todo
+    $('option[class^="sub-"]').remove();
 
-	// Poner las cosas se filtra de nuevo
-	populateoption = rewriteoption(myfilter);
-	$('#hotel').html(populateoption);
+    // Poner las cosas se filtra de nuevo
+    populateoption = rewriteoption(myfilter);
+    $('#hotel').html(populateoption);
 }
 
 function rewriteoption(myfilter) {
-	// Vuelva a escribir sólo las cosas se filtra de nuevo en la opción
-	var options = $('#optionstore').text().split('@%');
-	var resultgood = false;
-	var myfilterclass = "sub-" + myfilter;
-	var optionlisting = "";
+   // Vuelva a escribir sólo las cosas se filtra de nuevo en la opción
+    var options = $('#optionstore').text().split('@%');
+    var resultgood = false;
+    var myfilterclass = "sub-" + myfilter;
+    var optionlisting = "";
 
-	myfilterclass = (myfilter != "") ? myfilterclass : "all";
+    myfilterclass = (myfilter != "")?myfilterclass:"all";
 
-	// Primera variable es siempre el valor, la segunda es siempre la clase, tercero es siempre el texto
-	for (var i = 3; i < options.length; i = i + 3) {
-		if (options[i - 1] == myfilterclass || myfilterclass == "all") {
-			optionlisting = optionlisting + '<option value="' + options[i - 2] + '" class="' + options[i - 1] + '">' + options[i] + '</option>';
-			resultgood = true;
-		}
-	}
-	if (resultgood) {
-		return optionlisting;
-	}
+    // Primera variable es siempre el valor, la segunda es siempre la clase, tercero es siempre el texto
+    for (var i = 3; i < options.length; i = i + 3) {
+        if (options[i - 1] == myfilterclass || myfilterclass == "all") {
+            optionlisting = optionlisting + '<option value="' + options[i - 2] + '" class="' + options[i - 1] + '">' + options[i] + '</option>';
+            resultgood = true;
+        }
+    }
+    if (resultgood) {
+        return optionlisting;
+    }
 }
-
-
-
