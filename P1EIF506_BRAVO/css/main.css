@@ -257,6 +257,12 @@ a:focus {
 .portfolio-item:hover .overlay {
   opacity: 1;
 }
+.link-hotel{
+  position: relative;
+  top: 50%;
+  display: inline-block;
+  margin-top: -20px;
+}
 .hotel-slider h2, h3{
 	text-align: center;
 	color: #fff;
