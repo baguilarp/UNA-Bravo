@@ -1,6 +1,6 @@
 /* CUSTOM STYLE CSS */
-/*Google Maps*/
 /* Element Selectors */
+/*Google Maps*/
 html
 {
 	height: 100%;
@@ -11,18 +11,6 @@ body
 	height: 100%;
 }
 
-#map-outer
-{
-	background-color: #FFF;
-	border: 2px solid #CCC;
-	height: 220px;
-	margin-bottom: 20px;
-	padding: 20px;
-}
-#map-container
-{
-	height: 200px;
-}
 /*Campo Email de formulario */
 /* Class, Attribute, and Pseudo Selectors */
 form label.error
@@ -66,4 +54,17 @@ form label.error
 .modal-wide .modal-body
 {
 	overflow-y: auto;
+}
+/*Google Maps*/
+#map-outer
+{
+	background-color: #FFF;
+	border: 2px solid #CCC;
+	height: 220px;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+#map-container, #map-container2, #map-container3, #map-container4, #map-container5, #map-container6, #map-container7, #map-container8
+{
+	height: 200px;
 }
