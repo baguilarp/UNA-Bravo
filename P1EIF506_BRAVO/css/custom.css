@@ -11,8 +11,9 @@ body
 	height: 100%;
 }
 
-/*Campo Email de formulario */
+
 /* Class, Attribute, and Pseudo Selectors */
+/*Campo Email de formulario */
 form label.error
 {
 	color: #ff0000;
@@ -35,8 +36,6 @@ form label.error
 	padding: 6px 12px;
 	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 	vertical-align: middle;
-	webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-	webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 	width: 100%;
 }
 #email:focus
@@ -44,7 +43,6 @@ form label.error
 	border-color: #66afe9;
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
 	outline: 0;
-	webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
 }
 /*Modal grande*/
 .modal.modal-wide .modal-dialog
@@ -67,4 +65,19 @@ form label.error
 #map-container, #map-container2, #map-container3, #map-container4, #map-container5, #map-container6, #map-container7, #map-container8
 {
 	height: 200px;
+}
+
+@media only screen and (min-width: 240px) and (max-width:480px )
+{
+	/* Class, Attribute, and Pseudo Selectors */
+	/*Aumentar el tamaño de los items*/
+	.portfolio-items.col-2 > li 
+	{
+	  width: 100%;
+	}
+	/*Modal grande*/
+	.modal.modal-wide .modal-dialog
+	{
+		width: 100%;
+	}
 }
